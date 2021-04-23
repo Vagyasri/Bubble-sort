@@ -1,3 +1,4 @@
+#sort method: Sort the array elements in ascending order
 def bubble_sort_loop(array)
   return array if array.size < 2
 
@@ -66,4 +67,5 @@ def bubble_sort_while_notime(array)
   array
 end
 
-p bubble_sort_while_notime([5, 7, 4, 2, 6])
+#p [5, 7, 4, 2, 6].sort
+

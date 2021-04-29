@@ -67,4 +67,18 @@ def bubble_sort_while_notime(array)
   array
 end
 
+def bubble_sort(array)
+  array.each do
+    index = 0
+    count = 0
+    while index < array.length - 1
+      array[index], array[index + 1] = array[index + 1], array[index] if array[index] > array[index + 1]
+      index += 1
+      count += 1
+    end
+    break if count.zero?
+  end
+end
+
 # p [5, 7, 4, 2, 6].sort
+# print bubble_sort([5, 7, 4, 2, 6])
